@@ -174,7 +174,7 @@ background-color: var(--link-hover,#404BBF);
     margin-right: auto;
     background-color: var(--header-logo-title, #2E2F42);
     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -451,7 +451,6 @@ background-color: var(--link-hover,#404BBF);
 }
 .footer-cont {
     display: flex;
-    
 }
 
 .footer-logo {
@@ -483,7 +482,9 @@ background-color: var(--link-hover,#404BBF);
         
 }
 .footer-soc-text {
+    font-weight: 500;
     line-height: 1.5;
+    font-size: 16px;
     letter-spacing: 0.02em;
     color: var(--footer-text, #E7E9FC);
 }
@@ -535,6 +536,8 @@ background-color: var(--link-hover,#404BBF);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    margin-left: 80px;
+    margin-bottom: 16px;
 }
 .sub-input{
     width: 264px;
@@ -566,32 +569,42 @@ background-color: var(--link-hover,#404BBF);
     display: flex;
     align-items: center;
     gap: 24px;
-    
+    margin-left: 80px;
 }
 
 .footer-button{
     min-width: 165px;
     height: 40px;
+    letter-spacing: 0.04em;
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 8px 24px;
-    gap: 16px;
     background: var(--logo-divide-bgbtn, #4D5AE5);
     border-radius: 4px;
     outline: transparent;
-    margin: 0 auto;
     border: none;
+    transition: background-color var(--tupical-transition);
 }
 
+.footer-button:hover,
+.footer-button:focus {
+    background-color: var(--link-hover, #404BBF);
+}
 .footer-plane{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    letter-spacing: 0.04em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .plane{
     fill: var(--mainbg-title, #fff);
+    margin-left: 16px;
 }
 .footer-sub-container{
     
