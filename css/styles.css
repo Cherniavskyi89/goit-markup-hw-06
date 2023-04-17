@@ -771,11 +771,17 @@ background-color: var(--link-hover,#404BBF);
     display: block;
     margin-left: auto;
     transition: background-color: var(--tupical-transition);
+    position: relative;
 }
 .modal-close{
     width: 8px;
     height: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 
 .modal-close-btn:focus{
     background-color: var(--link-hover, #404BBF);
